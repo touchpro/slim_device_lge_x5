@@ -13,7 +13,15 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+
+<!-- shooteru-specific phone app resources. -->
 <resources>
+    <!-- Flag indicating whether the Phone app should ignore
+        EVENT_SIM_NETWORK_LOCKED events from the Sim.  If true, this will
+        prevent the IccNetworkDepersonalizationPanel from being shown,
+        and effectively disable the "Sim network lock" feature. -->
+    <bool name="ignore_perso_locked_events">true</bool>
+
     <!-- This device implements a noise suppression device for in call audio-->
     <bool name="has_in_call_noise_suppression">true</bool>
 
